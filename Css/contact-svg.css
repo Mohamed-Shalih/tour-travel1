@@ -1,0 +1,39 @@
+
+.contact .image #world{
+    animation: world 60s linear infinite;
+    transform-origin: center;
+}
+.contact .image #clouds{
+    animation: clouds 5s ease infinite alternate;
+    transform-origin: center;
+}
+.contact .image #Plane{
+    animation: plane 2s ease infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes world {
+   from{
+       transform: rotateZ(0deg)
+   }
+   to{
+       transform: rotateZ(-360deg);
+   }
+    
+}
+@keyframes clouds {
+    from{
+        transform:translateY(0%) rotateX(0deg)
+    }
+    to{
+        transform: translateY(1%) rotateX(10deg);
+    }
+}
+@keyframes plane {
+    from{
+        transform: translateY(0%) rotateX(0deg)
+    }
+    to{
+        transform: translateY(5%) rotateX(10deg);
+    }
+}

@@ -1,0 +1,56 @@
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px){
+    header{
+        padding: 2rem !important;
+    }
+    section{
+        padding: 2rem !important;
+    }
+}
+
+@media (max-width:768px){
+    #menu-bar{
+        display: initial !important;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,.2);
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+     header .navbar a{
+         display: block;
+         border-radius: 0.5rem;
+         margin: 1.5rem 0 !important;
+         padding: 1.5rem;
+         background: rgba(0,0,0,.7);
+     }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+    .contact .row form .inputBox{
+        padding: 0 !important;
+    }
+    .contact .row form .inputBox input{
+        width: 100% !important;
+    }
+}
